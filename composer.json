@@ -1,0 +1,23 @@
+{
+  "name": "cliqueti/frenet",
+  "description": "SDK unofficial for o Frenet services.",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paulo",
+      "email": "paulo@cliqueti.com.br",
+      "homepage": "https://www.cliqueti.com.br"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "ext-json": "*",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "CliqueTI\\Frenet\\": "source"
+    }
+  }
+}
