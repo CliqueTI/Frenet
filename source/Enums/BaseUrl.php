@@ -11,7 +11,7 @@ class BaseUrl {
     /** @var string[]  */
     const BASEURLS = [
         'production' => 'api.frenet.com.br',
-        'sandbox' => 'private-anon-981d0574c8-frenetapi.apiary-proxy.com',
+        'sandbox' => 'private-anon-9871ce117a-frenetapi.apiary-proxy.com',
     ];
 
     /** @var string  */

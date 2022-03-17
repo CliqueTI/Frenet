@@ -28,4 +28,5 @@ $data = array(
 $shipping = new Shipping(Environment::SANDBOX, 'SEU TOKEN',false);
 $shipping->calculate($data);
 
-var_dump($shipping->response(), $shipping->error());
+var_dump($shipping->response());
+var_dump($shipping->error());

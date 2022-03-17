@@ -22,6 +22,10 @@ class Cep extends Frenet {
      * @return string|null
      */
     public function error():?string {
+        /* When Null */
+        if(empty($this->response())){
+            return "Nenhum dado foi retornado.";
+        }
         if($this->response()->Message != "ok"){
             return $this->response()->Message;
         }

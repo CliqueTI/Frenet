@@ -41,6 +41,11 @@ class Shipping extends Frenet {
      * @return string|null
      */
     public function error():?string {
+        /* When Null */
+        if(empty($this->response())){
+            return "Nenhum dado foi retornado.";
+        }
+        /* When Error */
         if(property_exists($this->response(), 'Message') && $this->response()->Message != ""){
             return $this->response()->Message;
         }
